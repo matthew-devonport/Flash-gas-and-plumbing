@@ -10,7 +10,7 @@ server.use(cookieParser());
 const { sendEmail } = require("../server/routes/mail");
 
 server.post("/api/v1/sendMail", (req, res) => {
-  sendEmail(req.body.name, req.body.email, req.body.message);
+  sendEmail(req.body.name, req.body.email, req.body.message, req.body.file);
 });
 
 const port = 3000

@@ -11,6 +11,7 @@ class Form extends React.Component {
       name: '',
       email: '',
       message: '',
+      file: null,
       // isVerified: false
     };
     this.handleChange = this.handleChange.bind(this);
@@ -26,6 +27,7 @@ class Form extends React.Component {
         [event.target.name]: event.target.value,
         [event.target.email]: event.target.value,
         [event.target.message]: event.target.value,
+        [event.target.file]: event.target.file,
       }
     );
   }
@@ -45,12 +47,15 @@ class Form extends React.Component {
     //   console.log('capcha successfully loaded')
     // }
 
+
   handleSubmit(event) {
+    console.log(this.state)
     event.preventDefault();
     const data = {
       name: this.state.name,
       email: this.state.email,
       message: this.state.message,
+      file: this.state.file,
     };
 
     Axios.post("api/v1/sendMail", data)
@@ -93,7 +98,10 @@ class Form extends React.Component {
                 required />
               <h2 className="formTitles">UPLOAD FILE</h2>
               <input
-                type="file" />
+                type='file'
+                name='file'
+                value={this.state.file}
+                onChange={this.handleChange} />
               <div id='messageForm'>
                 <h2 className="formTitles">MESSAGE</h2>
                 <textarea
