@@ -1,0 +1,638 @@
+  
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    color: black;
+    background-color: black;
+    font-family: 'Orbitron', 'Arial', 'sans-serif';
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    /* overflow-y: hidden; */
+}
+
+#servicesTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    font-weight: 900;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    padding-top: 5vh;
+
+}
+
+.background {
+    height: 100vh;
+}
+
+.servicesBackground {
+background-color: rgb(225, 165, 0);
+}
+
+.titleBackground {
+    height: 15vh;
+    color: whitesmoke;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(./img/clear-background.png);
+    }
+
+.flexBox {
+    display: flex;
+    justify-content: flex-end;
+    background: transparent;
+}
+
+.fixed {
+  display: flex;
+  background-color: transparent;
+  position: fixed;
+}
+
+.leftNav {
+  display: flex;
+  justify-content: flex-start;
+  background-color: black;
+  padding-right: 100%;
+}
+
+.centerImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 50%;
+  }
+
+
+
+#mainLogo { 
+max-height: 70vh;
+width: auto;
+max-width: 80%;
+padding-top: 10vh;
+padding-bottom: 10vh ;
+}
+
+#enquireLogo {
+max-height: 20vh;
+width: 30%;
+cursor: pointer;
+border-radius: 10px;
+}
+
+.enquireStyles {
+  transition: box-shadow 0.4s, background-color 0.4s;
+}
+
+
+.enquireStyles:hover {
+  background-color: #ffa500;
+  box-shadow: 0 5px 15px #ffa500;
+}
+
+
+.navBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100;
+    color:black;
+    padding: 1;   
+}
+
+.navLogos {
+    display: flex;
+    background-color: transparent;
+    height: 3.5vh;
+    max-height: 3.5vw;
+    width: auto;
+    margin-right: 2vh;
+    margin-top: 2vh;
+    border-radius: 10px;
+    transition: box-shadow 0.2s, background-color 0.2s;
+    cursor: pointer;
+}
+
+.navLogos:hover {
+  background-color: #ffa500;
+  box-shadow: 0 5px 15px #ffa500;
+}
+
+.navLogoPage {
+  display: flex;
+  background-color: transparent;
+  height: 3.5vh;
+  max-height: 3.5vw;
+  width: auto;
+  margin-right: 2vh;
+  margin-top: 2vh;
+  cursor: pointer;
+}
+
+.leftLogos {
+  position: relative;
+  height: 6.5vh;
+  max-height: 6.5vw;
+  width: auto;
+  margin-left: 2vh;
+  margin-top: 1vh;
+}
+
+.homeLogo {
+  border-radius: 10px;
+  transition: box-shadow 0.2s, background-color 0.2s;
+}
+
+.homeLogo:hover {
+  background-color: #ffa500;
+  box-shadow: 0 5px 15px #ffa500;
+}
+
+.servicesFlex {
+    max-width: 100%;
+    resize: both;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.servicesLogo {
+    height: 40vh;
+    width: auto;
+    cursor: pointer;
+    border-radius: 90px;
+    transition: box-shadow 0.3s, background-color 0.3s;
+  }
+  
+ 
+  .servicesLogo:hover {
+    background-color: #333333;
+    box-shadow: 0 25px 40px #333333;
+  }
+
+   /* Responsive layout - makes h1 titles smaller*/
+   @media screen and (max-width: 600px) {
+    .servicesBackground {
+        height: 70vh;
+    }
+    .background {
+        height: 80vh;
+    }
+    .servicesLogo {
+        height: 30vh;
+        /* padding-top: 5vh; */
+    }
+    .servicesFlex {
+        height: 70vh;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #servicesTitle {
+    font-size: 1.5rem;
+    }
+    .titleBackground {
+        height: 10vh;
+        max-width: 100%;
+    }
+  }
+
+
+
+  /* ------ Footer ------ */
+#footer {
+  font-weight: 700;
+  background-color: black;
+  color:  rgb(225, 165, 0);
+	margin: 0 auto;
+  width: auto;
+  max-width: 100%;
+	background-size: contain;
+	position: relative;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    float: right;
+    margin-top: -10vh;
+}
+
+a:link,
+a:visited {
+    color: whitesmoke;
+    text-decoration: none;
+    padding-bottom: 1px;
+    transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #217799;
+}
+
+.footer-nav li {
+  margin-right: 40px;
+}
+
+.copyrightText {
+    font-size: 0.8rem;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.leftFooter {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 1%;   
+}
+
+.phoneLogo {
+ width: 5vw;
+ margin-bottom: 0.5vh;
+ cursor: pointer;
+}
+
+.emailLogo {
+  width: 2.5vw;
+  cursor: pointer;
+}
+
+.contactInfo {
+  font-size: 0.8rem;
+  color: whitesmoke;
+  margin-bottom: 1.5vh;
+}
+
+.socialmedia {
+  display: block;
+  position: absolute;
+  font-size: 0.8rem;
+  color: whitesmoke;
+  margin-bottom: 1.5vh;
+}
+
+
+.facebook {
+margin-top: 32px;
+max-height: 5vh;
+max-width: 5vw;
+border-radius: 5px;
+transition: box-shadow 0.2s, background-color 0.2s;
+}
+
+.facebook:hover {
+background-color: #3b5998;
+box-shadow: 1px 1px 25px #3b5998;
+}
+
+.instagram {
+margin-top: 35px;  
+max-height: 4.5vh;
+max-width: 4.5vw;
+border-radius: 8.5px;
+transition: box-shadow 0.2s, background-color 0.2s;
+}
+
+.instagram:hover {
+background-color: #E1306C;
+ box-shadow: 1px 1px 25px #E1306C;
+}
+
+  /* Responsive layout - makes com footer better to scale */
+  @media screen and (max-width: 1400px) {
+    .footer-nav li {
+      padding-left: 20px;
+      padding-top: 20px;
+      padding-bottom: 50px;
+      margin-right: 50px;
+    }
+  }
+
+
+  /* Responsive layout - makes footer better to scale */
+  @media screen and (max-width: 800px) {
+    .footer-nav li {
+      font-size: 0.8rem;
+      padding-left: 10px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-right: 40px;
+      text-align: center;
+    }
+  }
+
+   /* Responsive layout - makes footer better to scale */
+  @media screen and (max-width: 600px) {
+    .footer-nav li {
+      font-size: 0.55rem;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-right: 8px;
+    }
+
+   /* Responsive layout - makes footer better to scale */
+   @media screen and (max-width: 450px) {
+    .footer-nav li {
+      font-size: 0.40rem;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-right: 8px;
+    }   
+}
+  }
+
+  /* ------ Pop Up Box ------ */
+
+  #popup-overlay {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.973);
+    overflow-y: hidden;
+    transition: opacity 500ms;
+    z-index: 6;
+  }
+  
+  #popup-overlay-services {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.973);
+    overflow-y: scroll;
+    transition: opacity 500ms;
+    z-index: 6;
+  }
+
+  #popup-link-box {
+      cursor: pointer;
+  }
+  
+  
+  
+  #popup-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 25px;
+    margin-top: -30px;
+    transition: all 200ms;
+    font-size: 5rem;
+    font-weight: bold;
+    text-decoration: none;
+      color: #ffa500;
+      cursor: pointer;
+  }
+
+  #popup-close-services {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 25px;
+    margin-top: -30px;
+    transition: all 200ms;
+    font-size: 5rem;
+    font-weight: bold;
+    text-decoration: none;
+      color: #ffa500;
+      cursor: pointer;
+  }
+  
+  #popup-close:hover {
+    color: #800000;
+  }
+
+  #popup-close-services:hover {
+    color: #800000;
+  }
+
+ .formImage {
+  max-height: 32vh;
+  width: auto;
+  max-width: 80%;
+  margin-top: 5vh;
+  padding-bottom: 3vh;
+ }
+
+ /* ------- Form -------- */
+
+ .formTitles {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    opacity: 1;
+    max-width: 60vh;
+    margin: 0;
+    padding-top: 2vh;
+    padding-bottom: 0.5vh;
+    color:whitesmoke
+  }
+  
+  /* Responsive layout - makes about form title text fit better to scale */
+  @media screen and (max-width: 1400px) {
+    .formTitles {
+      font-size: 1rem;
+    }
+  }
+
+  #messageForm textarea{
+    height: 20vh;
+    width: 100%;
+    resize: none;
+    font-size: 1rem;
+  }
+  
+  .contact {
+   padding-left: 29%  
+  }
+
+
+  .contact textarea {
+    height: 40px;
+    width: 60%;
+    max-width: 60%;
+    resize: none;
+    background-color: black;
+    color: white;
+  }
+
+  .contact input {
+    height: 3vh;
+    width: 50%;
+    max-width: 60%;
+    resize: none;
+    background-color: black;
+    color: white;
+  } 
+
+  .formContainer {
+    overflow-y: visible;
+  }
+
+  #submit-btn input[type="submit"] {
+    font-family: 'Orbitron', 'Arial', 'sans-serif';
+    font-weight: 600;
+    cursor: pointer;
+    width: 80%;
+    background-color: #ffa500;
+    color: black;
+    height:auto;
+    border: none;
+    margin: 0 0 5px;
+    margin-top: 20px;
+    font-size: 2rem;
+    transition: box-shadow 0.2s, background-color 0.2s;
+  }
+
+
+  #submit-btn input[type="submit"]:hover {
+    background-color: #ffa500;
+    box-shadow: 0 5px 15px #ffa500;
+  }
+
+
+  /* ----- FlashPlumbing Popup ----- */
+
+.plumbingTitle {
+  color:whitesmoke;
+  font-weight: 800;
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 3vh;
+  padding-bottom: 8vh;
+}  
+
+.flashPlumbing {
+font-weight: 600;
+padding-left: 25vh;
+padding-right: 10vh;
+color: whitesmoke;
+display: flex;
+flex-direction: column;
+padding-bottom: 20vh;
+}
+
+.plumbingDesc {
+  flex: 1 1 0px;
+}
+
+.plumbingDesc li {
+  font-family: 'Montserrat', 'Arial', 'sans-serif';
+  font-weight: 500;
+}
+
+
+
+
+.popupTitle {
+color: #ffa500;
+font-size: 1.5rem;
+padding-bottom: 2vh;
+padding-top: 3vh;
+}
+
+/* -------- Gallery --------*/
+
+#galleryLogo {
+height: 10vh;
+max-width: 20%;
+}
+
+#photosArea {
+  background-color: rgba(225, 165, 0, 0.808);;
+  margin-top: 10%;
+  margin-bottom: 1%;
+}
+
+.pics {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  justify-content: center;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.pic {
+  height: 100%;
+  max-width: 25%;
+  margin-bottom: 10px;
+  margin: 0 10px;
+  align-content: flex-start;
+  vertical-align: middle;
+}
+
+.pic img { 
+  margin-top: 10px;
+  background-color: black;
+  width: 100%;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .pic {
+      flex: 40%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .pic {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+.popUpPic {
+  display: flex;
+  max-height: 95vh;
+  max-width: 80%;
+  margin: auto;
+position: absolute;
+top: 0; left: 0; bottom: 0; right: 0;
+}
+
+/*------ About ------ */
+
+#aboutLogo {
+  width: 15vw;
+}
+
+#aboutArea {
+    background-color: rgba(225, 165, 0, 0.808);;
+    margin-top: 10%;
+    margin-bottom: 1%;
+}
+
+.aboutFlex {
+  display: flex;
+  align-self: center;
+}
+
+.aboutItem {
+  font-family: 'Montserrat', 'Arial', 'sans-serif';
+  font-weight: 500;
+  max-width: 80%;
+  text-align: center;
+}
