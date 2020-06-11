@@ -32,6 +32,8 @@ class Form extends React.Component {
     );
   }
 
+  
+
   handleInputChange(event) {
     const target = event.target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
@@ -58,15 +60,17 @@ class Form extends React.Component {
       file: this.state.file,
     };
 
+    
+
     Axios.post("api/v1/sendMail", data)
     // if (this.state.isVerified) {
-    //   {
-    //   alert("Thank you! We will be in touch shortly!")
-    //   }
+      {
+      alert("Thank you! We will be in touch shortly!")
+      }
     // } else 
-    {
-      alert("Please verify that you are a human!")
-    }
+    // {
+    //   alert("Please verify that you are a human!")
+    // }
   // }
 
   // verifyCallback(response) {
@@ -76,6 +80,7 @@ class Form extends React.Component {
   //     })
 
   //   }
+  
   }
 
   render() {
