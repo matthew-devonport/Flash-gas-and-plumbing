@@ -9,7 +9,7 @@
     "dev:server": "nodemon server",
     "build": "webpack --config client/webpack.config.js",
     "server": "node server",
-    "start": "run-s build server",
+    "start": "node server",
     "test": "jest --verbose --watchAll"
   },
   "babel": {
@@ -33,6 +33,7 @@
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
     "express": "^4.16.4",
+    "multer": "^1.4.2",
     "nodemailer": "^6.4.8",
     "react-router-dom": "^5.2.0"
   },

@@ -1,33 +1,33 @@
 const mailer = require("nodemailer");
 
-const getEmailData = (name, email, message) => {
+const getEmailData = (name, email, message, file) => {
     let data = null;
 
 
             data = {
                 from: "Contact Form",
-                to: "flashgasandplumbing@gmail.com",
+                to: "matthew.devonport.test@gmail.com",
                 subject: `Message from the contact form!`,
                 html: `<b>From:</b>&nbsp;${name}
                       <br><br><b>Email:</b>&nbsp;${email}
-                      <br><br><b>Message:</b>&nbsp;${message}`
+                      <br><br><b>Message:</b>&nbsp;${message}
+                      <br><br><b>File:</b>&nbsp;${file}`
             }
     return data;
 }
 
-
  
-const sendEmail = (name, email, message) => {
+const sendEmail = (name, email, message, file) => {
 
     const smtpTransport = mailer.createTransport({
         service: "Gmail",
         auth: {
-            user: "flashgasandplumbing@gmail.com",
-            pass: "hillcountry22"
+            user: "matthew.devonport.test@gmail.com",
+            pass: "Happy123!"
         }
     })
 
-    const mail = getEmailData(name, email, message)
+    const mail = getEmailData(name, email, message, file)
 
     smtpTransport.sendMail(mail, function(error, response) {
         if(error) {

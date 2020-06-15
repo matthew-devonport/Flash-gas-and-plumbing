@@ -2,23 +2,32 @@ import React from 'react'
 import Axios from 'axios'
 // import Recaptcha from 'react-recaptcha';
 
-
 class Form extends React.Component {
   constructor(props) {
-    super(props);
     super(props);
     this.state = {
       name: '',
       email: '',
       message: '',
+      file: null,
       // isVerified: false
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleInputChange = this.handleInputChange.bind(this);
-      //  this.recaptchaLoaded = this.recaptchaLoaded.bind(this);
-      //  this.verifyCallback = this.verifyCallback.bind(this);
+    this.handleFileChange = this.handleFileChange.bind(this);
+    //  this.recaptchaLoaded = this.recaptchaLoaded.bind(this);
+    //  this.verifyCallback = this.verifyCallback.bind(this);
   }
+
+  handleFileChange(event) {
+    console.log(event.target.files[0])
+    event.preventDefault();
+    this.setState(
+      {
+        file: event.target.files[0],
+      })
+  }  
+
 
   handleChange(event) {
     this.setState(
@@ -30,20 +39,12 @@ class Form extends React.Component {
     );
   }
 
-  handleInputChange(event) {
-    const target = event.target;
-    const value = target.type === 'checkbox' ? target.checked : target.value;
-    const name = target.name;
 
-    this.setState({
-      [name]: value
-    })
 
-  }
+  // recaptchaLoaded () {
+  //   console.log('capcha successfully loaded')
+  // }
 
-    // recaptchaLoaded () {
-    //   console.log('capcha successfully loaded')
-    // }
 
   handleSubmit(event) {
     event.preventDefault();
@@ -51,26 +52,30 @@ class Form extends React.Component {
       name: this.state.name,
       email: this.state.email,
       message: this.state.message,
+      file: this.state.file,
     };
+
+
 
     Axios.post("api/v1/sendMail", data)
     // if (this.state.isVerified) {
-    //   {
-    //   alert("Thank you! We will be in touch shortly!")
-    //   }
-    // } else 
     {
-      alert("Please verify that you are a human!")
+      alert("Thank you! We will be in touch shortly!")
     }
-  // }
+    // } else 
+    // {
+    //   alert("Please verify that you are a human!")
+    // }
+    // }
 
-  // verifyCallback(response) {
-  //   if (response) {
-  //     this.setState({
-  //       isVerified: true
-  //     })
+    // verifyCallback(response) {
+    //   if (response) {
+    //     this.setState({
+    //       isVerified: true
+    //     })
 
-  //   }
+    //   }
+
   }
 
   render() {
@@ -93,7 +98,10 @@ class Form extends React.Component {
                 required />
               <h2 className="formTitles">UPLOAD FILE</h2>
               <input
-                type="file" />
+                type='file'
+                name='file'
+                // value={this.state.file}
+                onChange={this.handleFileChange} />
               <div id='messageForm'>
                 <h2 className="formTitles">MESSAGE</h2>
                 <textarea
@@ -102,8 +110,8 @@ class Form extends React.Component {
                   onChange={this.handleChange}
                   required />
               </div>
-                      
-         {/* <Recaptcha
+
+              {/* <Recaptcha
     sitekey=""
     render="explicit"
     verifyCallback={this.verifyCallback}
