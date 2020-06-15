@@ -1,8 +1,10 @@
 const server = require('./server')
+const express = require('express')
 
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 
+server.use(express.json({limit: '50mb'}))
 server.use(bodyParser.urlencoded({ extended: true }));
 server.use(bodyParser.json());
 server.use(cookieParser());
