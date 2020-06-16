@@ -2,6 +2,13 @@ import React from 'react'
 import Axios from 'axios'
 // import Recaptcha from 'react-recaptcha';
 
+const toBase64 = file => new Promise((resolve, reject) => {
+  const reader = new FileReader();
+  reader.readAsDataURL(file);
+  reader.onload = () => resolve(reader.result);
+  reader.onerror = error => reject(error);
+});
+
 class Form extends React.Component {
   constructor(props) {
     super(props);
@@ -19,14 +26,11 @@ class Form extends React.Component {
     //  this.verifyCallback = this.verifyCallback.bind(this);
   }
 
-  handleFileChange(event) {
-    console.log(event.target.files[0])
-    event.preventDefault();
-    this.setState(
-      {
-        file: event.target.files[0],
-      })
-  }  
+  handleFileChange({target: {name, files}}) {
+    toBase64(files[0]).then(dataUri => {
+      this.setState(state => ({...state, [name]: dataUri}))
+    })
+ }
 
 
   handleChange(event) {
@@ -48,20 +52,13 @@ class Form extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    const data = {
-      name: this.state.name,
-      email: this.state.email,
-      message: this.state.message,
-      file: this.state.file,
-    };
-
-
+    const data = {...this.state};
 
     Axios.post("api/v1/sendMail", data)
-    // if (this.state.isVerified) {
-    {
+      {
       alert("Thank you! We will be in touch shortly!")
-    }
+      }
+
     // } else 
     // {
     //   alert("Please verify that you are a human!")

@@ -8,10 +8,14 @@ const getEmailData = (name, email, message, file) => {
                 from: "Contact Form",
                 to: "matthew.devonport.test@gmail.com",
                 subject: `Message from the contact form!`,
+                attachments: [
+                    {
+                      path: `${file}`
+                    }
+                  ],
                 html: `<b>From:</b>&nbsp;${name}
                       <br><br><b>Email:</b>&nbsp;${email}
-                      <br><br><b>Message:</b>&nbsp;${message}
-                      <br><br><b>File:</b>&nbsp;${file}`
+                      <br><br><b>Message:</b>&nbsp;${message}`
             }
     return data;
 }
