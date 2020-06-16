@@ -6,7 +6,7 @@ const getEmailData = (name, email, message, file) => {
 
             data = {
                 from: "Contact Form",
-                to: "matthew.devonport.test@gmail.com",
+                to: "flashgasandplumbing@gmail.com",
                 subject: `Message from the contact form!`,
                 attachments: [
                     {
@@ -26,8 +26,8 @@ const sendEmail = (name, email, message, file) => {
     const smtpTransport = mailer.createTransport({
         service: "Gmail",
         auth: {
-            user: "matthew.devonport.test@gmail.com",
-            pass: "Happy123!"
+            user: "flashgasandplumbing@gmail.com",
+            pass: "hillcountry22"
         }
     })
 
