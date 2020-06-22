@@ -20,6 +20,13 @@ body {
     height: 100vh;
 }
 
+  /* Responsive layout */
+  @media screen and (max-width: 1100px) {
+    .background {
+    height: 60vh; 
+    }
+    }
+
 .servicesBackground {
 background-color: rgb(225, 165, 0);
 }
@@ -67,12 +74,28 @@ padding-top: 10vh;
 padding-bottom: 10vh ;
 }
 
+  /* Responsive layout */
+  @media screen and (max-width: 1100px) {
+    #mainLogo {
+      max-height: 50vh;
+      max-width: 60%;   
+    }
+    }
+
 #enquireLogo {
 max-height: 20vh;
 max-width: 30%;
 cursor: pointer;
 border-radius: 10px;
 }
+
+  /* Responsive layout */
+  @media screen and (max-width: 1200px) {
+    #enquireLogo {
+      max-height: 50vh;
+      max-width: 60%;   
+    }
+    }
 
 .enquireStyles {
   transition: box-shadow 0.4s, background-color 0.4s;
@@ -149,8 +172,14 @@ border-radius: 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
 }
+
+  /* Responsive layout */
+  @media screen and (max-width: 1200px) {
+    .servicesFlex {
+     height: 40vh;
+    }
+    }
 
 .servicesLogo {
     max-height: 40vh;
@@ -195,6 +224,8 @@ border-radius: 10px;
     @media screen and (max-width: 1100px) {
       .servicesLogo {
         border-radius: 0;
+        transition: none;
+        box-shadow: none;
       }
       }  
 
@@ -465,7 +496,7 @@ background-color: #E1306C;
   }
   
   /* Responsive layout - makes about form title text fit better to scale */
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 1200px) {
     .formTitles {
       font-size: 1rem;
     }
@@ -536,7 +567,15 @@ background-color: #E1306C;
   text-align: center;
   padding-top: 3vh;
   padding-bottom: 8vh;
-}  
+}
+
+  /* Responsive layout  */
+  @media screen and (max-width: 1200px) {
+    .plumbingTitle {
+      font-size: 3rem;
+      padding-bottom: 5vh;
+    }
+  }
 
 .flashPlumbing {
 font-weight: 600;
@@ -547,6 +586,14 @@ display: flex;
 flex-direction: column;
 padding-bottom: 20vh;
 }
+
+  /* Responsive layout  */
+  @media screen and (max-width: 1200px) {
+    .flashPlumbing {
+      padding-left: 10vh;
+      padding-bottom: 15vh;
+    }
+  }
 
 .plumbingDesc {
   flex: 1 1 0px;
