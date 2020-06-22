@@ -1,13 +1,10 @@
 import React from 'react'
 // import { HashRouter as Router, Route } from 'react-router-dom';
 
-import Title from './Title'
-import Services from './Services'
-import ServicesTitle from './ServicesTitle'
 import Nav from './Nav'
 import Footer from './Footer'
 
-class Home extends React.Component {
+class ComingSoon extends React.Component {
 
 
     render() {
@@ -15,9 +12,8 @@ class Home extends React.Component {
             <React.Fragment> 
                     <Nav/>
                 <div>
-                    <Title />
-                    <ServicesTitle />
-                    <Services />
+                <img src="./img/logo.png" alt="Main logo" id="mainLogo" className="centerImg"></img>
+                <p id="comingSoon">Coming Soon</p>
                     <Footer />
                 </div>  
             </React.Fragment>
@@ -25,4 +21,4 @@ class Home extends React.Component {
     }
 }
 
-export default Home
+export default ComingSoon
