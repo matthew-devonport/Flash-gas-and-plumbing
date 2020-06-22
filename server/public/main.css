@@ -167,7 +167,7 @@ border-radius: 10px;
     height: 40vh;
     width: auto;
     cursor: pointer;
-    border-radius: 90px;
+    border-radius: 80px;
     transition: box-shadow 0.3s, background-color 0.3s;
   }
   
@@ -217,12 +217,18 @@ border-radius: 10px;
 	position: relative;
 }
 
+.footerFlex {
+  display: flex;
+  justify-content: space-between;
+}
 .footer-nav {
-    list-style: none;
-    display: flex;
-    float: right;
-    margin-top: -10.1vh;
-    margin-right: 40px;
+ list-style: none;
+ margin-right: 1%;
+}
+
+.socalLinks {
+  display: flex;
+  justify-content: center;
 }
 
 a:link,
@@ -239,10 +245,6 @@ a:active {
     color: #217799;
 }
 
-.footer-nav li {
-  margin-right: 10px;
-  justify-content: center;
-}
 
 .copyrightText {
     font-size: 0.8rem;
@@ -258,13 +260,15 @@ a:active {
 }
 
 .phoneLogo {
- width: 5vw;
+max-height: 5vh;
+max-width: 5vw;
  margin-bottom: 0.5vh;
  cursor: pointer;
 }
 
 .emailLogo {
-  width: 2.5vw;
+  max-height: 2.5vh;
+max-width: 2.5vw;
   cursor: pointer;
 }
 
@@ -275,15 +279,13 @@ a:active {
 }
 
 .socialmedia {
-  display: block;
-  position: absolute;
   font-size: 0.8rem;
   color: whitesmoke;
+  margin-bottom: 10px;
 }
 
 
 .facebook {
-margin-top: 30px;
 max-height: 3vh;
 max-width: 3vw;
 border-radius: 5px;
@@ -298,7 +300,6 @@ box-shadow: 1px 1px 25px #3b5998;
 }
 
 .instagram {
-margin-top: 32px;  
 max-height: 2.8vh;
 max-width: 2.8vw;
 border-radius: 8.5px;
@@ -313,10 +314,17 @@ background-color: #E1306C;
 }
 
   /* Responsive layout - makes com footer better to scale */
-  @media screen and (max-width: 1400px) {
-    .footer-nav li {
-
-    }
+  @media screen and (max-width: 1200px) {
+    .phoneLogo {
+      max-height: 10vh;
+      max-width: 10vw;
+       cursor: pointer;
+      }
+      
+      .emailLogo {
+      max-height: 5vh;
+      max-width: 5vw;
+      }
   }
 
 
