@@ -221,7 +221,8 @@ border-radius: 10px;
     list-style: none;
     display: flex;
     float: right;
-    margin-top: -10vh;
+    margin-top: -10.1vh;
+    margin-right: 40px;
 }
 
 a:link,
@@ -239,7 +240,8 @@ a:active {
 }
 
 .footer-nav li {
-  margin-right: 40px;
+  margin-right: 10px;
+  justify-content: center;
 }
 
 .copyrightText {
@@ -277,16 +279,16 @@ a:active {
   position: absolute;
   font-size: 0.8rem;
   color: whitesmoke;
-  margin-bottom: 1.5vh;
-  padding-right: 10px;
 }
 
 
 .facebook {
-margin-top: 42px;
+margin-top: 30px;
 max-height: 3vh;
 max-width: 3vw;
 border-radius: 5px;
+margin-left: 23px;
+padding: 1px;
 transition: box-shadow 0.2s, background-color 0.2s;
 }
 
@@ -296,10 +298,12 @@ box-shadow: 1px 1px 25px #3b5998;
 }
 
 .instagram {
-margin-top: 45px;  
-max-height: 2.7vh;
-max-width: 2.7vw;
+margin-top: 32px;  
+max-height: 2.8vh;
+max-width: 2.8vw;
 border-radius: 8.5px;
+margin-left: 22px;
+padding: 1px;
 transition: box-shadow 0.2s, background-color 0.2s;
 }
 
@@ -311,10 +315,7 @@ background-color: #E1306C;
   /* Responsive layout - makes com footer better to scale */
   @media screen and (max-width: 1400px) {
     .footer-nav li {
-      padding-left: 20px;
-      padding-top: 20px;
-      padding-bottom: 50px;
-      margin-right: 50px;
+
     }
   }
 
@@ -322,31 +323,20 @@ background-color: #E1306C;
   /* Responsive layout - makes footer better to scale */
   @media screen and (max-width: 800px) {
     .footer-nav li {
-      font-size: 0.8rem;
-      padding-left: 10px;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      margin-right: 40px;
-      text-align: center;
+
     }
   }
 
    /* Responsive layout - makes footer better to scale */
   @media screen and (max-width: 600px) {
     .footer-nav li {
-      font-size: 0.55rem;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      margin-right: 8px;
+
     }
 
    /* Responsive layout - makes footer better to scale */
    @media screen and (max-width: 450px) {
     .footer-nav li {
-      font-size: 0.40rem;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      margin-right: 8px;
+
     }   
 }
   }
@@ -647,6 +637,7 @@ justify-content: center;
 font-size: 6rem;
 align-items: center;
 font-family: 'Orbitron', 'Arial', 'sans-serif';
+font-weight: 600;
 background-color: rgba(225, 165, 0, 0.808);
 margin-bottom: 1%;
 }
