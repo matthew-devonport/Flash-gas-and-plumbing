@@ -164,10 +164,11 @@ border-radius: 10px;
 }
 
 .servicesLogo {
-    height: 40vh;
+    max-height: 40vh;
+    max-width: 20%;
     width: auto;
     cursor: pointer;
-    border-radius: 90px;
+    border-radius: 80px;
     transition: box-shadow 0.3s, background-color 0.3s;
   }
   
@@ -177,7 +178,17 @@ border-radius: 10px;
     box-shadow: 0 25px 40px #333333;
   }
 
-   /* Responsive layout - makes h1 titles smaller*/
+  /* Responsive layout */
+  @media screen and (max-width: 1400px) {
+    .servicesLogo {
+      max-height: 40vh;
+      max-width: 30%;
+      border-radius: 70px;
+    }
+    }
+
+
+   /* Responsive layout */
    @media screen and (max-width: 600px) {
     .servicesBackground {
         height: 70vh;
@@ -217,11 +228,18 @@ border-radius: 10px;
 	position: relative;
 }
 
+.footerFlex {
+  display: flex;
+  justify-content: space-between;
+}
 .footer-nav {
-    list-style: none;
-    display: flex;
-    float: right;
-    margin-top: -10vh;
+ list-style: none;
+ margin-right: 1%;
+}
+
+.socalLinks {
+  display: flex;
+  justify-content: center;
 }
 
 a:link,
@@ -238,9 +256,6 @@ a:active {
     color: #217799;
 }
 
-.footer-nav li {
-  margin-right: 40px;
-}
 
 .copyrightText {
     font-size: 0.8rem;
@@ -256,13 +271,15 @@ a:active {
 }
 
 .phoneLogo {
- width: 5vw;
+max-height: 5vh;
+max-width: 5vw;
  margin-bottom: 0.5vh;
  cursor: pointer;
 }
 
 .emailLogo {
-  width: 2.5vw;
+  max-height: 2.5vh;
+max-width: 2.5vw;
   cursor: pointer;
 }
 
@@ -273,19 +290,18 @@ a:active {
 }
 
 .socialmedia {
-  display: block;
-  position: absolute;
   font-size: 0.8rem;
   color: whitesmoke;
-  margin-bottom: 1.5vh;
+  margin-bottom: 10px;
 }
 
 
 .facebook {
-margin-top: 32px;
-max-height: 5vh;
-max-width: 5vw;
+max-height: 3vh;
+max-width: 3vw;
 border-radius: 5px;
+margin-left: 23px;
+padding: 1px;
 transition: box-shadow 0.2s, background-color 0.2s;
 }
 
@@ -295,10 +311,11 @@ box-shadow: 1px 1px 25px #3b5998;
 }
 
 .instagram {
-margin-top: 35px;  
-max-height: 4.5vh;
-max-width: 4.5vw;
+max-height: 2.8vh;
+max-width: 2.8vw;
 border-radius: 8.5px;
+margin-left: 22px;
+padding: 1px;
 transition: box-shadow 0.2s, background-color 0.2s;
 }
 
@@ -308,44 +325,37 @@ background-color: #E1306C;
 }
 
   /* Responsive layout - makes com footer better to scale */
-  @media screen and (max-width: 1400px) {
-    .footer-nav li {
-      padding-left: 20px;
-      padding-top: 20px;
-      padding-bottom: 50px;
-      margin-right: 50px;
-    }
+  @media screen and (max-width: 1200px) {
+    .phoneLogo {
+      max-height: 10vh;
+      max-width: 10vw;
+       cursor: pointer;
+      }
+      
+      .emailLogo {
+      max-height: 5vh;
+      max-width: 5vw;
+      }
   }
 
 
   /* Responsive layout - makes footer better to scale */
   @media screen and (max-width: 800px) {
     .footer-nav li {
-      font-size: 0.8rem;
-      padding-left: 10px;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      margin-right: 40px;
-      text-align: center;
+
     }
   }
 
    /* Responsive layout - makes footer better to scale */
   @media screen and (max-width: 600px) {
     .footer-nav li {
-      font-size: 0.55rem;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      margin-right: 8px;
+
     }
 
    /* Responsive layout - makes footer better to scale */
    @media screen and (max-width: 450px) {
     .footer-nav li {
-      font-size: 0.40rem;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      margin-right: 8px;
+
     }   
 }
   }
@@ -635,4 +645,18 @@ top: 0; left: 0; bottom: 0; right: 0;
   font-weight: 500;
   max-width: 80%;
   text-align: center;
+}
+
+/*------ ComingSoon ------ */
+
+#comingSoon {
+height: 50vh;
+display: flex;
+justify-content: center;
+font-size: 6rem;
+align-items: center;
+font-family: 'Orbitron', 'Arial', 'sans-serif';
+font-weight: 600;
+background-color: rgba(225, 165, 0, 0.808);
+margin-bottom: 1%;
 }
