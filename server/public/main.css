@@ -164,7 +164,8 @@ border-radius: 10px;
 }
 
 .servicesLogo {
-    height: 40vh;
+    max-height: 40vh;
+    max-width: 20%;
     width: auto;
     cursor: pointer;
     border-radius: 80px;
@@ -177,7 +178,17 @@ border-radius: 10px;
     box-shadow: 0 25px 40px #333333;
   }
 
-   /* Responsive layout - makes h1 titles smaller*/
+  /* Responsive layout */
+  @media screen and (max-width: 1400px) {
+    .servicesLogo {
+      max-height: 40vh;
+      max-width: 30%;
+      border-radius: 70px;
+    }
+    }
+
+
+   /* Responsive layout */
    @media screen and (max-width: 600px) {
     .servicesBackground {
         height: 70vh;
