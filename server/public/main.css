@@ -498,7 +498,7 @@ background-color: #E1306C;
   /* Responsive layout - makes about form title text fit better to scale */
   @media screen and (max-width: 1200px) {
     .formTitles {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
   }
 
@@ -513,6 +513,13 @@ background-color: #E1306C;
    padding-left: 29%  
   }
 
+  /* Responsive layout - makes about form title text fit better to scale */
+  @media screen and (max-width: 1200px) {
+    .contact {
+      padding-left: 17%  
+     }
+  } 
+
 
   .contact textarea {
     height: 40px;
@@ -523,6 +530,14 @@ background-color: #E1306C;
     color: white;
   }
 
+  /* Responsive layout - makes about form title text fit better to scale */
+  @media screen and (max-width: 1200px) {
+    .contact textarea {
+      width: 70%;
+      max-width: 80%; 
+     }
+  }  
+
   .contact input {
     height: 3vh;
     width: 50%;
@@ -530,7 +545,15 @@ background-color: #E1306C;
     resize: none;
     background-color: black;
     color: white;
-  } 
+  }
+  
+  /* Responsive layout - makes about form title text fit better to scale */
+  @media screen and (max-width: 1200px) {
+    .contact input {
+      width: 70%;
+      max-width: 80%; 
+     }
+  }   
 
   .formContainer {
     overflow-y: visible;
