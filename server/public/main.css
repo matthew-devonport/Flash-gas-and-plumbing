@@ -330,6 +330,8 @@ border-radius: 10px;
           font-weight: 900;
         }
         .servicesLogo {
+          max-height: 40vh;
+          max-width: 35%;
           border-radius: 0;
         }           
         .servicesLogo:hover {
@@ -678,6 +680,36 @@ background-color: #E1306C;
   #popup-close-services:hover {
     color: #800000;
   }
+
+  @media screen and (max-width: 600px) {
+    #popup-close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-right: 12px;
+      margin-top: -8px;
+      transition: all 200ms;
+      font-size: 2rem;
+      font-weight: bold;
+      text-decoration: none;
+        color: #ffa500;
+        cursor: pointer;
+    }
+  
+    #popup-close-services {
+      position: fixed;
+      top: 0;
+      right: 0;
+      margin-right: 12px;
+      margin-top: -8px;
+      transition: all 200ms;
+      font-size: 2rem;
+      font-weight: bold;
+      text-decoration: none;
+        color: #ffa500;
+        cursor: pointer;
+    }
+    }
 
  .formImage {
   max-height: 32vh;
