@@ -78,7 +78,7 @@ class Form extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className="formContainer centerImg" id="formScale">
+        <div className="formContainer centerImg">
           <form onSubmit={this.handleSubmit} method="post">
             <div className='contact'>
               <h2 className="formTitles">YOUR FULL NAME</h2>

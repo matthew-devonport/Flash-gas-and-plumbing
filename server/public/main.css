@@ -186,7 +186,17 @@ border-radius: 10px;
           margin-right: 2vh;
           margin-top: 2vh;
       }
-        }   
+        }
+        
+        @media screen and (max-width: 400px) {
+          .navLogos {
+            height: 3.2vh;
+            max-height: 3.2vw;
+            width: auto;
+            margin-right: 1.8vh;
+            margin-top: 2vh;
+        }
+          }           
 
 .navLogoPage {
   display: flex;
@@ -433,6 +443,12 @@ a:active {
     margin-left: 1%;   
 }
 
+@media screen and (max-width: 560px) {
+  .leftFooter  {
+width: 35%;
+  }
+}
+
 .phoneLogo {
 max-height: 5vh;
 max-width: 5vw;
@@ -465,6 +481,7 @@ max-width: 2.5vw;
       font-size: 0.65rem;
     }
   }
+
 
 .socialmedia {
   font-size: 0.8rem;
@@ -509,6 +526,14 @@ box-shadow: 1px 1px 25px #3b5998;
     }
   }
 
+  @media screen and (max-width: 450px) {
+    .facebook  {
+      max-height: 6vh;
+      max-width: 6vw;
+      border-radius: 0;
+    }
+  }  
+
 .instagram {
 max-height: 2.8vh;
 max-width: 2.8vw;
@@ -531,6 +556,14 @@ background-color: #E1306C;
       border-radius: 0;
     }
   }
+
+  @media screen and (max-width: 450px) {
+    .instagram  {
+      max-height: 5.8vh;
+      max-width: 5.8vw;
+      border-radius: 0;
+    }
+  }  
 
   /* Responsive layout - makes com footer better to scale */
   @media screen and (max-width: 1200px) {
@@ -560,6 +593,19 @@ background-color: #E1306C;
       max-width: 8vw;
       }
     }
+
+    @media screen and (max-width: 450px) {
+      .phoneLogo {
+        max-height: 20vh;
+        max-width: 20vw;
+         cursor: pointer;
+        }
+        
+        .emailLogo {
+        max-height: 11vh;
+        max-width: 11vw;
+        }
+      }    
 
   
 
@@ -669,6 +715,12 @@ background-color: #E1306C;
       font-size: 1.1rem;
     }
   }
+
+  @media screen and (max-width: 599px) {
+    .formTitles {
+      font-size: 0.8rem;
+    }
+  }
  
   #messageForm textarea{
     height: 20vh;
@@ -686,7 +738,15 @@ background-color: #E1306C;
     .contact {
       padding-left: 17%  
      }
-  } 
+  }
+ 
+  @media screen and (max-width: 599px) {
+    .formContainer {
+      width: 95%;
+     }
+  }
+
+
 
 
   .contact textarea {
@@ -721,12 +781,26 @@ background-color: #E1306C;
       width: 70%;
       max-width: 80%; 
      }
-  }   
+  }
+
+  @media screen and (max-width: 600px) {
+    .contact input {
+      width: 100%;
+     }
+  }
 
   .formContainer {
     overflow-y: visible;
   }
 
+  @media screen and (max-width: 600px) {
+
+    .formContainer {
+      padding-left: 5%;
+      padding-right: 5%;
+      max-width: 80%;
+     }
+  } 
   #submit-btn input[type="submit"] {
     font-family: 'Orbitron', 'Arial', 'sans-serif';
     font-weight: 600;
@@ -748,6 +822,26 @@ background-color: #E1306C;
     box-shadow: 0 5px 15px #ffa500;
   }
 
+  @media screen and (max-width: 599px) {
+    #submit-btn input[type="submit"] {
+      width: 50%;
+      font-size: 1rem;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      margin-right: 28%;
+ 
+    }
+  }
+
+  @media screen and (max-width: 599px) {
+    #submit-btn {
+      display: flex;
+      justify-content: center;
+
+ 
+    }
+  }  
 
   /* ----- FlashPlumbing Popup ----- */
 
@@ -768,6 +862,22 @@ background-color: #E1306C;
     }
   }
 
+    /* Responsive layout  */
+    @media screen and (max-width: 620px) {
+      .plumbingTitle {
+        font-size: 2rem;
+        padding-bottom: 5vh;
+      }
+    }
+
+     /* Responsive layout  */
+     @media screen and (max-width: 450px) {
+      .plumbingTitle {
+        font-size: 1.5rem;
+        padding-bottom: 5vh;
+      }
+    }   
+
 .flashPlumbing {
 font-weight: 600;
 padding-left: 25vh;
@@ -786,6 +896,14 @@ padding-bottom: 20vh;
     }
   }
 
+  /* Responsive layout  */
+  @media screen and (max-width: 600px) {
+    .flashPlumbing {
+      padding-left: 14%;
+      padding-bottom: 15vh;
+    }
+  }  
+
 .plumbingDesc {
   flex: 1 1 0px;
 }
@@ -802,6 +920,13 @@ padding-bottom: 20vh;
     }
   }
 
+  @media screen and (max-width: 600px) {
+    .plumbingDesc li {
+      font-size: 0.72rem;
+    }
+  }
+
+
 
 .popupTitle {
 color: #ffa500;
@@ -816,6 +941,14 @@ padding-top: 3vh;
       font-size: 1.2rem;
     }
   }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 600px) {
+    .popupTitle {
+      font-size: 1rem;
+    }
+  }
+
 /* -------- Gallery --------*/
 
 #galleryLogo {
