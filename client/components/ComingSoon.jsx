@@ -11,11 +11,12 @@ class ComingSoon extends React.Component {
         return (
             <React.Fragment> 
                     <Nav/>
-                <div>
                 <img src="./img/logo.png" alt="Main logo" id="mainLogo" className="centerImg"></img>
-                <p id="comingSoon">Coming Soon</p>
-                    <Footer />
+                <div id="comingSoon">
+                <p>Coming Soon</p>
                 </div>  
+                    <Footer />
+
             </React.Fragment>
         )
     }
