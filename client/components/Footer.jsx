@@ -19,8 +19,8 @@ class Footer extends React.Component {
                        <div className="footer-nav">
                        <h1 className="socialmedia">SOCIAL MEDIA</h1>
                        <div className="socialLinks">
-                            <a><Link><img src="./img/facebook.png" alt="Facebook logo" className="footerLogo facebook"></img> </Link></a>
-                            <a><Link><img src="./img/instagram.png" alt="Instagram logo" className="footerLogo instagram"></img> </Link></a>
+                           <Link><img src="./img/facebook.png" alt="Facebook logo" className="footerLogo facebook"></img> </Link>
+                           <Link><img src="./img/instagram.png" alt="Instagram logo" className="footerLogo instagram"></img> </Link>
                         </div>
                         </div>
                         </div>
