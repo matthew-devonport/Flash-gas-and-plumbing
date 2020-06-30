@@ -21,7 +21,7 @@ class About extends React.Component {
                         enthusiasm and experience in the field. The Company’s target market is for 
                         customers with high expectations of  workmanship and communication and to deliver 
                         to them a value added service.</div>
-                        <div className="aboutItem centerImg"><h1>WHY CHOOSE US?</h1></div>
+                        <div className="aboutItem chooseUs"><h1>WHY CHOOSE US?</h1></div>
                         <div className="aboutItem">
                           <ul>
                         <li>Personalised service where customer deals directly 

@@ -1064,6 +1064,13 @@ top: 0; left: 0; bottom: 0; right: 0;
     padding-bottom: 2%;
 }
 
+  /* Responsive layout  */
+  @media screen and (max-width: 1300px) {
+    #aboutArea {
+      padding-left: 10%;
+    }
+  }
+
 .aboutFlex {
   display: flex;
   align-self: center;
@@ -1076,6 +1083,26 @@ top: 0; left: 0; bottom: 0; right: 0;
   margin-top: 2%;
   margin-bottom: 2%;
 }
+
+.chooseUs {
+   text-align: center;
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .aboutItem {
+     font-size: 12px;
+    }
+    .chooseUs {
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+    #aboutArea {
+      padding-left: 5%;
+      margin-bottom: 5%;
+    }
+  }
+
 
 /*------ ComingSoon ------ */
 
