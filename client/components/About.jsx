@@ -1,12 +1,14 @@
 import React from "react"
 
 import Footer from './Footer'
+import AboutNav from './AboutNav'
 
 class About extends React.Component {
 
   render() {
     return (
       <React.Fragment>
+        <AboutNav />
             <div className="background">
                 <img src="./img/logo.png" alt="Main logo" id="mainLogo" className="centerImg"></img>
                 <img src="./img/about.png" alt="About logo" id="aboutLogo" className="centerImg"></img>
