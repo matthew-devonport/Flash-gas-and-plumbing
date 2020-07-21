@@ -172,6 +172,14 @@ border-radius: 10px;
   }
     }
 
+    @media screen and (max-width: 1100px) {
+      .navLogos {
+  
+  border-radius: 5px;
+  
+    }
+      }
+
     @media screen and (max-width: 900px) {
       .navLogos {
     border-radius: 0;
@@ -235,6 +243,12 @@ border-radius: 10px;
   border-radius: 10px;
   transition: box-shadow 0.2s, background-color 0.2s;
 }
+@media screen and (max-width: 1100px) {
+  .homeLogo {
+
+    border-radius: 5px;
+}
+  }
 
 .homeLogo:hover {
   background-color: #ffa500;
@@ -311,17 +325,21 @@ border-radius: 10px;
       .servicesLogo {
         max-height: 30vh;
         max-width: 25%;
-        border-radius: 60px;
+        border-radius: 45px;
 
       }
       #servicesTitle {
         font-size: 2rem;
         font-weight: 900;
+        margin-bottom: 5%;
       } 
       .titleBackground {
         height: 10vh;
         max-width: 100%;
-    }           
+    } 
+    .servicesFlex {
+    margin-top: 5%;
+    }          
       }  
 
       @media screen and (max-width: 950px) {
@@ -457,11 +475,24 @@ max-width: 5vw;
  margin-bottom: 0.5vh;
  cursor: pointer;
 }
+@media screen and (max-width: 1100px) {
+  .phoneLogo  {
+    max-height: 13vh;
+    max-width: 13vw;
+  }
+}
 
 .emailLogo {
   max-height: 2.5vh;
 max-width: 2.5vw;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1100px) {
+  .emailLogo {
+    max-height: 8.5vh;
+    max-width: 8.5vw;
+  }
 }
 
 .contactInfo {
@@ -519,6 +550,13 @@ background-color: #3b5998;
 box-shadow: 1px 1px 25px #3b5998;
 }
 
+@media screen and (max-width: 1100px) {
+  .facebook  {
+    max-height: 5vh;
+    max-width: 5vw;
+  }
+}
+
   /* Responsive layout  */
   @media screen and (max-width: 600px) {
     .facebook  {
@@ -548,6 +586,13 @@ transition: box-shadow 0.2s, background-color 0.2s;
 .instagram:hover {
 background-color: #E1306C;
  box-shadow: 1px 1px 25px #E1306C;
+}
+
+@media screen and (max-width: 1100px) {
+  .instagram  {
+    max-height: 4.8vh;
+    max-width: 4.8vw;
+  }
 }
 
   /* Responsive layout  */
