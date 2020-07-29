@@ -11,7 +11,13 @@ class Testimonials extends React.Component {
         return (
             <React.Fragment> 
                     <Nav/>
+                    <div className="background">
                 <img src="./img/logo.png" alt="Main logo" id="mainLogo" className="centerImg"></img>
+                <img src="./img/testimonials.png" alt="Main logo" id="testLogo" className="centerImg"></img>
+                </div>
+                <div id="testArea">
+                    <p>test</p>
+                </div>
                     <Footer />
 
             </React.Fragment>
