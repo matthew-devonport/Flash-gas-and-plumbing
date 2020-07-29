@@ -35,7 +35,7 @@ class Testimonials extends React.Component {
                        water cylinder replacement, Cam kept me posted with the change of pricing, helped out to minimise costs and updated me throughout. Highly 
                        recommend to all! - Big thanks, Cam!"<br/><br/> - <i>Katja Widder</i></div>
                     <div className="divider"></div>
-                    <div className="testText">"After a week of no hot water and unable to get a plumber to come or any callbacks, Cam was able to fit me in the day I called and had a
+                    <div className="testText bottomText">"After a week of no hot water and unable to get a plumber to come or any callbacks, Cam was able to fit me in the day I called and had a
                        quote for me within 24 hours. Job completed today first thing after the weekend. Thanks for the priority being a hot water emergency, so looking forward to a hot
                        shower tonight. Helpful, good communication, fair and personable. I am happy to recommend."<br/><br/> - <i>Cheryl White</i></div>        
                 </div>

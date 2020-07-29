@@ -238,6 +238,13 @@ border-radius: 10px;
     }
     }
 
+    @media screen and (max-width: 420px) {
+      .leftLogos {
+        height: 7vh;
+        max-height: 7vw;
+        margin-left: 8%;
+      }
+      }    
 
 .homeLogo {
   border-radius: 10px;
@@ -1210,9 +1217,35 @@ text-align: center;
     padding-bottom: 2%;
 }
 
+@media screen and (max-width: 1200px) {
+  #testArea {
+    padding-left: 5%;
+    margin-top: 7%;
+    padding-top: 4%;
+  }
+}
+
 
 #testLogo {
   width: 25vw;
+}
+
+@media screen and (max-width: 1200px) {
+  #testLogo {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #testLogo {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #testLogo {
+    width: 50vw;
+  }
 }
 
 .testTitle {
@@ -1222,8 +1255,20 @@ text-align: center;
   padding-bottom: 5%;
 }
 
+@media screen and (max-width: 500px) {
+  .testTitle {
+    font-size: 1.5em;
+  }
+}
+
 .testText {
   padding-bottom: 2%;
+}
+
+@media screen and (max-width: 430px) {
+  .testText {
+    font-size: 17px;
+  }
 }
 
 .divider {
@@ -1251,3 +1296,9 @@ text-align: center;
   display: flex;
   justify-content: flex-end;
 } */
+
+@media screen and (max-width: 500px) {
+.bottomText {
+  padding-bottom: 5%;
+}
+}
