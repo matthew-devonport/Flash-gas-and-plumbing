@@ -4,7 +4,7 @@ import { HashRouter as NavLink, Link } from 'react-router-dom';
 import PopUpBox from './PopUpBox'
 import Form from './Form'
 
-class AboutNav extends React.Component {
+class TestNav extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -26,10 +26,10 @@ class AboutNav extends React.Component {
                 </div>
                 <div className="flexBox">
                     <div className="fixed">
-                        <img src="./img/about-1.png" alt="About logo" className="navLogoPage"></img>
+                        <Link to='/about'><img src="./img/about.png" alt="About logo" className="navLogos"></img></Link>
                         <img onClick={() => this.togglePopup(this.contactForm)} src="./img/contact us.png" alt="Contact logo" className="navLogos"></img>
                         <Link to='/comingsoon'><img src="./img/gallery.png" alt="Gallery logo" className="navLogos"></img></Link>
-                        <Link to='/testimonials'><img src="./img/testimonials.png" alt="Testimonials logo" className="navLogos"></img></Link>
+                        <img src="./img/testimonials-1.png" alt="Testimonials logo" className="navLogoPage"></img>
                     </div>
                 </div>
                 {this.state.popUpContent !== null && (
@@ -54,4 +54,4 @@ class AboutNav extends React.Component {
 
 
 }
-export default AboutNav
+export default TestNav
