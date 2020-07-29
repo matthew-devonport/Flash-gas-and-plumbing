@@ -3,7 +3,6 @@ import { HashRouter as NavLink, Link } from 'react-router-dom';
 
 import PopUpBox from './PopUpBox'
 import Form from './Form'
-import Comingsoon from './ComingSoon'
 
 class Nav extends React.Component {
     constructor(props) {
@@ -30,7 +29,7 @@ class Nav extends React.Component {
                         <Link to='/about'><img src="./img/about.png" alt="About logo" className="navLogos"></img></Link>
                         <img onClick={() => this.togglePopup(this.contactForm)} src="./img/contact us.png" alt="Contact logo" className="navLogos"></img>
                                 <Link to='/comingsoon'><img src="./img/gallery.png" alt="Gallery logo" className="navLogos"></img></Link>
-                                <Link to='/comingsoon'><img src="./img/testimonials.png" alt="Testimonials logo" className="navLogos"></img></Link>
+                                <Link to='/testimonials'><img src="./img/testimonials.png" alt="Testimonials logo" className="navLogos"></img></Link>
                     </div>
                 </div>
                         {this.state.popUpContent !== null && (
