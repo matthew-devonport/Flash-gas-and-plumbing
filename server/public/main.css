@@ -1106,6 +1106,12 @@ top: 0; left: 0; bottom: 0; right: 0;
   width: 15vw;
 }
 
+@media screen and (max-width: 430px) {
+  #aboutLogo {
+    width: 25vw;
+  }
+}
+
 #aboutArea {
     background-color: rgba(225, 165, 0, 0.808);;
     margin-top: 3%;
@@ -1123,6 +1129,12 @@ top: 0; left: 0; bottom: 0; right: 0;
     }
   }
 
+  @media screen and (max-width: 430px) {
+    #aboutArea {
+      margin-top: 8%;
+    }
+  }  
+
 .aboutFlex {
   display: flex;
   align-self: center;
@@ -1139,8 +1151,10 @@ top: 0; left: 0; bottom: 0; right: 0;
 @media screen and (max-width: 430px) {
   .aboutItem {
     max-width: 100%;
+    padding-top: 5%;
   }
 }
+
 .chooseUs {
    text-align: center;
   }
