@@ -771,6 +771,16 @@ background-color: #E1306C;
   padding-bottom: 3vh;
  }
 
+ @media screen and (max-width: 450px) {
+  .formImage {
+   max-height: 20vh;
+  }
+
+ }
+
+
+
+
  /* ------- Form -------- */
 
  .formTitles {
