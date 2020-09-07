@@ -13,7 +13,7 @@ class ServicesPopUpBox extends React.Component {
             <a id='popup-close-services' onClick={togglePopup}>
               &times;
             </a>
-        </div>}
+        </div>
       </React.Fragment>
     )
   }
