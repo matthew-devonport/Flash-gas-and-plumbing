@@ -1046,8 +1046,13 @@ padding-top: 3vh;
 /* -------- Gallery --------*/
 
 #galleryLogo {
-height: 10vh;
-max-width: 20%;
+  width: 15vw;
+}
+
+@media screen and (max-width: 430px) {
+  #galleryLogo {
+    width: 25vw;
+  }
 }
 
 #photosArea {
