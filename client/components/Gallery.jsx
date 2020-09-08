@@ -6,15 +6,13 @@ import Footer from './Footer'
 import GalleryNav from './GalleryNav'
 
 const images = [
-    { id: 1, thumbnail: "/img/gallery/1-1.jpg", fullSize: "/img/gallery/1-2.jpg" },
-    { id: 2, thumbnail: "/img/gallery/2-1.jpg" ,fullSize: "/img/gallery/2-2.jpg" },
-    { id: 3, thumbnail: "/img/gallery/3-1.jpg" ,fullSize: "/img/gallery/3-2.jpg" },
-    { id: 4, thumbnail: "/img/gallery/4-1.jpg" ,fullSize: "/img/gallery/4-2.jpg" },
-    { id: 5, thumbnail: "/img/gallery/5-1.jpg" ,fullSize: "/img/gallery/5-2.jpg" },
-    { id: 6, thumbnail: "/img/gallery/6-1.jpg" ,fullSize: "/img/gallery/6-2.jpg" },
-    { id: 7, thumbnail: "/img/gallery/7-1.jpg" ,fullSize: "/img/gallery/7-2.jpg" },
-    { id: 8, thumbnail: "/img/gallery/8-1.jpg" ,fullSize: "/img/gallery/8-2.jpg" },
-    { id: 9, thumbnail: "/img/gallery/9-1.jpg" ,fullSize: "/img/gallery/9-2.jpg" },
+    { id: 1, thumbnail: "/img/gallery/1-1.webp", fullSize: "/img/gallery/1-2.webp" },
+    { id: 2, thumbnail: "/img/gallery/2-1.webp" ,fullSize: "/img/gallery/2-2.webp" },
+    { id: 3, thumbnail: "/img/gallery/3-1.webp" ,fullSize: "/img/gallery/3-2.webp" },
+    { id: 4, thumbnail: "/img/gallery/4-1.webp" ,fullSize: "/img/gallery/4-2.webp" },
+    { id: 5, thumbnail: "/img/gallery/5-1.webp" ,fullSize: "/img/gallery/5-2.webp" },
+    { id: 6, thumbnail: "/img/gallery/6-1.webp" ,fullSize: "/img/gallery/6-2.webp" },
+    { id: 7, thumbnail: "/img/gallery/7-1.webp" ,fullSize: "/img/gallery/7-2.webp" },
 ]
 
 class Gallery extends React.Component {
