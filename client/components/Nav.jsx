@@ -28,7 +28,7 @@ class Nav extends React.Component {
                     <div className="fixed">
                         <Link to='/about'><img src="./img/about.png" alt="About logo" className="navLogos"></img></Link>
                         <img onClick={() => this.togglePopup(this.contactForm)} src="./img/contact us.png" alt="Contact logo" className="navLogos"></img>
-                                <Link to='/comingsoon'><img src="./img/gallery.png" alt="Gallery logo" className="navLogos"></img></Link>
+                                <Link to='/gallery'><img src="./img/gallery.png" alt="Gallery logo" className="navLogos"></img></Link>
                                 <Link to='/testimonials'><img src="./img/testimonials.png" alt="Testimonials logo" className="navLogos"></img></Link>
                     </div>
                 </div>

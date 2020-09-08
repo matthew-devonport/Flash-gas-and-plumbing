@@ -1046,12 +1046,12 @@ padding-top: 3vh;
 /* -------- Gallery --------*/
 
 #galleryLogo {
-  width: 15vw;
+  width: 18vw;
 }
 
 @media screen and (max-width: 430px) {
   #galleryLogo {
-    width: 25vw;
+    width: 28vw;
   }
 }
 

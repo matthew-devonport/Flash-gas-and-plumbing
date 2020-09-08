@@ -26,10 +26,10 @@ class GalleryNav extends React.Component {
                 </div>
                 <div className="flexBox">
                     <div className="fixed">
-                        <img src="./img/about.png" alt="About logo" className="navLogos"></img>
+                    <Link to='/about'><img src="./img/about.png" alt="About logo" className="navLogos"></img></Link>
                         <img onClick={() => this.togglePopup(this.contactForm)} src="./img/contact us.png" alt="Contact logo" className="navLogos"></img>
                         <img src="./img/gallery-1.png" alt="Gallery logo" className="navLogoPage"></img>
-                        <img src="./img/testimonials.png" alt="Testimonials logo" className="navLogos"></img>
+                    <Link to='/testimonials'><img src="./img/testimonials.png" alt="Testimonials logo" className="navLogos"></img></Link>
                     </div>
                 </div>
                 {this.state.popUpContent !== null && (
