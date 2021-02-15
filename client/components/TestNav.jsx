@@ -27,7 +27,9 @@ class TestNav extends React.Component {
                 <div className="flexBox">
                     <div className="fixed">
                         <Link to='/about'><img src="./img/about.png" alt="About logo" className="navLogos"></img></Link>
-                        <img onClick={() => this.togglePopup(this.contactForm)} src="./img/contact us.png" alt="Contact logo" className="navLogos"></img>
+                                                <a href="https://www.jotform.com/form/210036267796864" target="_blank">
+                        <img src="./img/contact-1.png" alt="Contact logo" className="navLogoPage"></img>
+                        </a>
                         <Link to='/gallery'><img src="./img/gallery.png" alt="Gallery logo" className="navLogos"></img></Link>
                         <img src="./img/testimonials-1.png" alt="Testimonials logo" className="navLogoPage"></img>
                     </div>
